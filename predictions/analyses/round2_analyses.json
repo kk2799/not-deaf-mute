@@ -1,0 +1,91 @@
+{
+ "tost_A1_vs_beats_single": {
+  "margin_pt": 2.0,
+  "alpha": 0.05,
+  "n_boot": 10000,
+  "seed": 0,
+  "unit": "recording-clustered bootstrap (153 recordings)",
+  "ci90_pt": [
+   -1.5565162270038968,
+   1.5390915977775708
+  ],
+  "p_one_sided_ge": 0.0172,
+  "p_one_sided_le": 0.0185,
+  "tost_p": 0.0185,
+  "verdict": "equivalent within margin"
+ },
+ "shipsear_zero_shot_macro_f1": [
+  {
+   "file": "fusion_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_fusionaudio+demon_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.0288,
+   "f1_macro": 0.0115
+  },
+  {
+   "file": "lalm_prompting_qwen2_audio_shipsear_zero_shot_shot0_clip30.0_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.0385,
+   "f1_macro": 0.0223
+  },
+  {
+   "file": "lalm_prompting_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.1923,
+   "f1_macro": 0.0808
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_specdemon_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.0192,
+   "f1_macro": 0.0031
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_specmel_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.0192,
+   "f1_macro": 0.0031
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_specstft_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.0192,
+   "f1_macro": 0.0031
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_vl_32b_shipsear_zero_shot_shot0_clip30.0_specdemon_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.0192,
+   "f1_macro": 0.0033
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_vl_32b_shipsear_zero_shot_shot0_clip30.0_specmel_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.125,
+   "f1_macro": 0.0467
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_vl_32b_shipsear_zero_shot_shot0_clip30.0_specstft_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.1154,
+   "f1_macro": 0.0446
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_vl_8b_shipsear_zero_shot_shot0_clip30.0_specdemon_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.1827,
+   "f1_macro": 0.0296
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_vl_8b_shipsear_zero_shot_shot0_clip30.0_specmel_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.1827,
+   "f1_macro": 0.0257
+  },
+  {
+   "file": "vlm_spectrogram_qwen3_vl_8b_shipsear_zero_shot_shot0_clip30.0_specstft_langen_enrichnone.json",
+   "n": 104,
+   "acc": 0.1827,
+   "f1_macro": 0.0257
+  }
+ ]
+}
