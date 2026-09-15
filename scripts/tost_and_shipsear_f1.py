@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-"""Round-2 analyses (2026-09-15, CPU-only).
+"""Supplementary analyses (CPU-only).
 
 T1  TOST equivalence for A1 (7-source fusion) vs BEATs single layer:
     replicates the recording-clustered bootstrap of a1_a2_bootstrap.py
     exactly (10,000 resamples of 153 recordings, seed 0) and reports the
-    90% CI plus the two one-sided p-values at a pre-specified +-2 pt
+    90% CI plus the two one-sided p-values at a +-2 pt equivalence
     margin. TOST rejects H0 (|Delta| >= margin) iff both one-sided
     p-values < 0.05, equivalently iff the 90% CI lies within +-2 pt.
 
-T2  ShipsEar macro-F1 for every zero-shot run (review ask: accuracy alone
+T2  ShipsEar macro-F1 for every zero-shot run (accuracy alone
     is class-prior sensitive). Reads the per-clip predictions from the
     result JSONs, recomputes accuracy + macro-F1, cross-checks accuracy
     against the stored value.

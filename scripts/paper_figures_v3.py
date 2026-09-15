@@ -1,15 +1,14 @@
 #!/usr/bin/env python
-"""SPLASH ICASSP figures v3 — message-first redesign.
+"""Generate the three paper figures from experiment outputs.
 
-One panel, one message, stated IN the figure (bold takeaway lines).
-fig1: two panels — (a) the exam (44 conditions vs chance, dose inset moved
-      into (b)) — (b) the ladder as gain-over-chance bars.
-fig2: four panels — (c) redesigned from 9 rotated-label log bars + twin axis
-      to a sorted horizontal dot plot (horizontal labels, no twin axis).
-fig3: unchanged content from v2 (already single-message).
-All values from real experiment outputs. Print size = design size
-(fig1/2 at 0.83\\textwidth ~ 5.94in, fig3 at 0.85\\columnwidth ~ 2.95in).
-Run in container: python scripts/paper_figures_v3.py
+fig1: two panels -- (a) all 44 generative conditions vs the chance lines,
+      (b) recovery routes as gain-over-chance bars.
+fig2: four panels -- (a) predicted-class collapse distributions, (b) the
+      shuffle test, (c) the silence test as a sorted KL dot plot, (d)
+      position profiles.
+fig3: per-layer probe curves with the honest audio-path band.
+All values are read from real experiment outputs; nothing is synthetic.
+Run: python scripts/paper_figures_v3.py
 """
 import csv
 import json

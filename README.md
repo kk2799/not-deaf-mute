@@ -1,4 +1,4 @@
-# Not Deaf, Mute
+# Not Deaf, but Mute
 
 **Why Large Audio-Language Models Fail at Underwater Acoustic Target Recognition**
 
@@ -84,7 +84,7 @@ inputs: `predictions/probes_fusion/{A1,s1_beats}.json`; summary:
 
 ```bibtex
 @inproceedings{liu2027notdeafmute,
-  title     = {Not Deaf, Mute: Why Large Audio-Language Models Fail at
+  title     = {Not Deaf, but Mute: Why Large Audio-Language Models Fail at
                Underwater Acoustic Target Recognition},
   author    = {Liu, Zhengkun and Liang, Yunpeng and Wang, Zixuan and
                Guo, Yutong and Ren, Jiawei and Xu, Ji},

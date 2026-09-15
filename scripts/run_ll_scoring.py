@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-"""Class-name log-likelihood scoring — the missing non-MCQ generative baseline.
+"""Class-name log-likelihood scoring — a non-MCQ generative baseline.
 
-Reviewer attack this closes: "the standard way to classify with an LLM without
-fine-tuning is log-likelihood scoring of class names; your MCQ-letter collapse
-may be an artifact of the multiple-choice interface."
+Complements the lettered-MCQ protocol: no option list and no letters are
+shown; each class-name string is scored directly as a continuation.
 
 Protocol (audio pathway, full 2,685-clip DeepShip test split):
   prompt  = free-form instruction, NO option list, NO letters
