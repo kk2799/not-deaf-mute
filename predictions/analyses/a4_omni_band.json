@@ -1,0 +1,318 @@
+{
+ "analysis": "A4 omni-audio per-layer band reconciliation",
+ "features": "outputs/features/layerprobe/qwen3_omni_30b_audio_5300b861c63f/shard_*.npz",
+ "protocol_honest": "per-layer C from the saved GroupKFold(3)-by-recording train-CV curve (fusion_upgrade stage1 omni_aud); refit on full 8,350 train; one test eval per layer (diagnostic; arm selection remains train-CV L11)",
+ "curve": [
+  {
+   "layer": 0,
+   "C": 0.01,
+   "test_acc": 0.7121042830540038,
+   "test_f1_macro": 0.7110957200104199
+  },
+  {
+   "layer": 1,
+   "C": 0.01,
+   "test_acc": 0.7087523277467411,
+   "test_f1_macro": 0.7078131321290286
+  },
+  {
+   "layer": 2,
+   "C": 0.01,
+   "test_acc": 0.7042830540037244,
+   "test_f1_macro": 0.70289400277462
+  },
+  {
+   "layer": 3,
+   "C": 0.01,
+   "test_acc": 0.7035381750465549,
+   "test_f1_macro": 0.7026549482803074
+  },
+  {
+   "layer": 4,
+   "C": 0.01,
+   "test_acc": 0.702048417132216,
+   "test_f1_macro": 0.7009171422118375
+  },
+  {
+   "layer": 5,
+   "C": 0.01,
+   "test_acc": 0.7005586592178771,
+   "test_f1_macro": 0.6997404406856446
+  },
+  {
+   "layer": 6,
+   "C": 0.01,
+   "test_acc": 0.7001862197392924,
+   "test_f1_macro": 0.6993380694138452
+  },
+  {
+   "layer": 7,
+   "C": 0.01,
+   "test_acc": 0.6957169459962756,
+   "test_f1_macro": 0.6947693838709065
+  },
+  {
+   "layer": 8,
+   "C": 0.01,
+   "test_acc": 0.6990689013035382,
+   "test_f1_macro": 0.6982516134521157
+  },
+  {
+   "layer": 9,
+   "C": 0.01,
+   "test_acc": 0.6949720670391062,
+   "test_f1_macro": 0.6940939445037576
+  },
+  {
+   "layer": 10,
+   "C": 0.01,
+   "test_acc": 0.6983240223463687,
+   "test_f1_macro": 0.6975664724535332
+  },
+  {
+   "layer": 11,
+   "C": 0.01,
+   "test_acc": 0.6945996275605214,
+   "test_f1_macro": 0.6935578571627851
+  },
+  {
+   "layer": 12,
+   "C": 0.01,
+   "test_acc": 0.6927374301675978,
+   "test_f1_macro": 0.6920096081246042
+  },
+  {
+   "layer": 13,
+   "C": 0.01,
+   "test_acc": 0.6864059590316574,
+   "test_f1_macro": 0.6858013098615273
+  },
+  {
+   "layer": 14,
+   "C": 0.01,
+   "test_acc": 0.6949720670391062,
+   "test_f1_macro": 0.6941372233247524
+  },
+  {
+   "layer": 15,
+   "C": 0.01,
+   "test_acc": 0.6871508379888268,
+   "test_f1_macro": 0.6866339486033668
+  },
+  {
+   "layer": 16,
+   "C": 0.01,
+   "test_acc": 0.6878957169459963,
+   "test_f1_macro": 0.6870835715406796
+  },
+  {
+   "layer": 17,
+   "C": 0.01,
+   "test_acc": 0.6864059590316574,
+   "test_f1_macro": 0.6852271336998932
+  },
+  {
+   "layer": 18,
+   "C": 0.01,
+   "test_acc": 0.6867783985102421,
+   "test_f1_macro": 0.6858093668439904
+  },
+  {
+   "layer": 19,
+   "C": 0.01,
+   "test_acc": 0.6986964618249535,
+   "test_f1_macro": 0.6980862744658811
+  },
+  {
+   "layer": 20,
+   "C": 0.01,
+   "test_acc": 0.6901303538175046,
+   "test_f1_macro": 0.6890005966187885
+  },
+  {
+   "layer": 21,
+   "C": 0.01,
+   "test_acc": 0.6890130353817505,
+   "test_f1_macro": 0.6875322798793098
+  },
+  {
+   "layer": 22,
+   "C": 0.01,
+   "test_acc": 0.6834264432029795,
+   "test_f1_macro": 0.6826939000806841
+  },
+  {
+   "layer": 23,
+   "C": 0.01,
+   "test_acc": 0.6860335195530727,
+   "test_f1_macro": 0.6842698002913566
+  },
+  {
+   "layer": 24,
+   "C": 0.01,
+   "test_acc": 0.6908752327746741,
+   "test_f1_macro": 0.6894480134822067
+  },
+  {
+   "layer": 25,
+   "C": 0.01,
+   "test_acc": 0.6789571694599628,
+   "test_f1_macro": 0.6774269860971438
+  },
+  {
+   "layer": 26,
+   "C": 0.01,
+   "test_acc": 0.6878957169459963,
+   "test_f1_macro": 0.6862240910706114
+  },
+  {
+   "layer": 27,
+   "C": 0.01,
+   "test_acc": 0.6860335195530727,
+   "test_f1_macro": 0.6841191942324583
+  },
+  {
+   "layer": 28,
+   "C": 0.01,
+   "test_acc": 0.6826815642458101,
+   "test_f1_macro": 0.6811410404925784
+  },
+  {
+   "layer": 29,
+   "C": 0.01,
+   "test_acc": 0.6770949720670391,
+   "test_f1_macro": 0.6753197210756936
+  },
+  {
+   "layer": 30,
+   "C": 0.01,
+   "test_acc": 0.6782122905027933,
+   "test_f1_macro": 0.6764121374883877
+  },
+  {
+   "layer": 31,
+   "C": 0.01,
+   "test_acc": 0.6893854748603352,
+   "test_f1_macro": 0.6875433570051487
+  },
+  {
+   "layer": 32,
+   "C": 0.01,
+   "test_acc": 0.6823091247672253,
+   "test_f1_macro": 0.6810139235218888
+  },
+  {
+   "layer": 33,
+   "C": 0.01,
+   "test_acc": 0.6830540037243947,
+   "test_f1_macro": 0.6814092464294407
+  },
+  {
+   "layer": 34,
+   "C": 0.01,
+   "test_acc": 0.6767225325884544,
+   "test_f1_macro": 0.6752799541548671
+  },
+  {
+   "layer": 35,
+   "C": 0.01,
+   "test_acc": 0.6770949720670391,
+   "test_f1_macro": 0.6755723374545541
+  },
+  {
+   "layer": 36,
+   "C": 0.01,
+   "test_acc": 0.6811918063314711,
+   "test_f1_macro": 0.6796868537094884
+  },
+  {
+   "layer": 37,
+   "C": 0.01,
+   "test_acc": 0.6737430167597765,
+   "test_f1_macro": 0.6719521223391156
+  },
+  {
+   "layer": 38,
+   "C": 0.01,
+   "test_acc": 0.6811918063314711,
+   "test_f1_macro": 0.6798904061403552
+  },
+  {
+   "layer": 39,
+   "C": 0.01,
+   "test_acc": 0.6733705772811918,
+   "test_f1_macro": 0.6721445755669766
+  },
+  {
+   "layer": 40,
+   "C": 0.01,
+   "test_acc": 0.6737430167597765,
+   "test_f1_macro": 0.6726587777852057
+  },
+  {
+   "layer": 41,
+   "C": 0.01,
+   "test_acc": 0.6752327746741155,
+   "test_f1_macro": 0.674188399044233
+  },
+  {
+   "layer": 42,
+   "C": 0.01,
+   "test_acc": 0.6763500931098696,
+   "test_f1_macro": 0.6753062285547414
+  },
+  {
+   "layer": 43,
+   "C": 0.01,
+   "test_acc": 0.6629422718808193,
+   "test_f1_macro": 0.6615497147895187
+  },
+  {
+   "layer": 44,
+   "C": 0.01,
+   "test_acc": 0.6655493482309125,
+   "test_f1_macro": 0.6651215920951331
+  },
+  {
+   "layer": 45,
+   "C": 0.01,
+   "test_acc": 0.6718808193668528,
+   "test_f1_macro": 0.671143668033198
+  },
+  {
+   "layer": 46,
+   "C": 0.01,
+   "test_acc": 0.6811918063314711,
+   "test_f1_macro": 0.6805693765372028
+  },
+  {
+   "layer": 47,
+   "C": 0.01,
+   "test_acc": 0.6715083798882682,
+   "test_f1_macro": 0.6708405349735587
+  },
+  {
+   "layer": 48,
+   "C": 0.01,
+   "test_acc": 0.6670391061452514,
+   "test_f1_macro": 0.6663948462722648
+  }
+ ],
+ "band_honest": {
+  "min_acc": 0.6629422718808193,
+  "min_layer": 43,
+  "max_acc": 0.7121042830540038,
+  "max_layer": 0,
+  "selected_layer": 11,
+  "selected_test_acc": 0.6945996275605214,
+  "selected_reproduces_saved": true
+ },
+ "band_curves_csv": {
+  "min_acc": 0.6398510242085661,
+  "max_acc": 0.6893854748603352,
+  "peak_layer": 31,
+  "n_layers": 49,
+  "protocol": "run_layer_probe.py: per-layer C by plain clip-iid GridSearchCV(cv=3); best layer chosen by TEST acc"
+ },
+ "sweep_seconds": 50.3
+}

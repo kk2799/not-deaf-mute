@@ -1,0 +1,7 @@
+name: shipsear
+root: /datasets/audio/shipsear/ShipsEar-12class
+clip_len: 30
+overlap: 0.5
+manifest_dir: outputs/manifests
+# NOTE: ShipsEar manifest generation needs the 12-class folder↔label mapping;
+# handled separately. DeepShip is the first runnable dataset.

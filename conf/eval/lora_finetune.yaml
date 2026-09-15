@@ -1,0 +1,6 @@
+name: lora_finetune
+rank: 8
+alpha: 16
+lr: 1.0e-4
+epochs: 5           # use ~20 for few-shot small data
+dropout: 0.05

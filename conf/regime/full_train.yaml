@@ -1,0 +1,4 @@
+name: full_train
+shot: 0
+support_seed: 0
+val_frac: 0.15

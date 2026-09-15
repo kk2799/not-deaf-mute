@@ -1,0 +1,83 @@
+[
+ {
+  "arm": "q2a.audio.silence",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Oil tanker",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.815,
+  "KL(real||null)": 0.027462044806383243
+ },
+ {
+  "arm": "q2a.audio.noise",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Oil tanker",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.815,
+  "KL(real||null)": 0.19918839175880926
+ },
+ {
+  "arm": "vl8b.mel.grey",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.025,
+  "KL(real||null)": 4.842160012473217
+ },
+ {
+  "arm": "vl8b.mel.pixnoise",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.025,
+  "KL(real||null)": 5.076791173536743
+ },
+ {
+  "arm": "omni.audio.silence",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.98,
+  "KL(real||null)": 0.14901246520512795
+ },
+ {
+  "arm": "omni.audio.noise",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.98,
+  "KL(real||null)": 0.04240083242300598
+ },
+ {
+  "arm": "omni.audio.nomedia",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.98,
+  "KL(real||null)": 0.001349046913306914
+ },
+ {
+  "arm": "omni.mel.grey",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.895,
+  "KL(real||null)": 0.26110993332592536
+ },
+ {
+  "arm": "omni.mel.pixnoise",
+  "n": 200,
+  "acc": 0.25,
+  "dominant": "Tug boat",
+  "dominant_frac": 1.0,
+  "keep_orig_pred": 0.895,
+  "KL(real||null)": 0.611560680825191
+ }
+]

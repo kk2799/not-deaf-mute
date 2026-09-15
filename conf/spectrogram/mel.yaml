@@ -1,0 +1,11 @@
+# Log-Mel 谱图（复用 fea-extract.get_fbank_feature：Kaldi 式 log Mel-fbank，300 阶）
+name: mel
+mode: mel
+sample_rate: 22500
+frame_length_ms: 50
+frame_shift_ms: 25
+n_mels: 300                 # 项目要求 300 阶（可调）
+high_freq: 8000
+low_freq: 10
+apply_mvn: true
+cmap: viridis

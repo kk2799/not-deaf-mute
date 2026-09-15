@@ -1,0 +1,249 @@
+{
+ "manifest": "shipsear_clip30_ov0.5_15f41dbed293.csv",
+ "n_train": 569,
+ "n_test": 104,
+ "layout": [
+  {
+   "letter": "A",
+   "label_id": 0,
+   "class": "Dredger",
+   "train_n": 13,
+   "test_n": 6,
+   "train_share_pct": 2.3,
+   "test_share_pct": 5.8
+  },
+  {
+   "letter": "B",
+   "label_id": 1,
+   "class": "Fishboat",
+   "train_n": 20,
+   "test_n": 3,
+   "train_share_pct": 3.5,
+   "test_share_pct": 2.9
+  },
+  {
+   "letter": "C",
+   "label_id": 2,
+   "class": "Motorboat",
+   "train_n": 53,
+   "test_n": 9,
+   "train_share_pct": 9.3,
+   "test_share_pct": 8.7
+  },
+  {
+   "letter": "D",
+   "label_id": 3,
+   "class": "Mussel boat",
+   "train_n": 36,
+   "test_n": 11,
+   "train_share_pct": 6.3,
+   "test_share_pct": 10.6
+  },
+  {
+   "letter": "E",
+   "label_id": 4,
+   "class": "Natural ambient noise",
+   "train_n": 21,
+   "test_n": 19,
+   "train_share_pct": 3.7,
+   "test_share_pct": 18.3
+  },
+  {
+   "letter": "F",
+   "label_id": 5,
+   "class": "Ocean liner",
+   "train_n": 57,
+   "test_n": 5,
+   "train_share_pct": 10.0,
+   "test_share_pct": 4.8
+  },
+  {
+   "letter": "G",
+   "label_id": 6,
+   "class": "Passengers",
+   "train_n": 239,
+   "test_n": 30,
+   "train_share_pct": 42.0,
+   "test_share_pct": 28.8
+  },
+  {
+   "letter": "H",
+   "label_id": 7,
+   "class": "Pilot ship",
+   "train_n": 6,
+   "test_n": 2,
+   "train_share_pct": 1.1,
+   "test_share_pct": 1.9
+  },
+  {
+   "letter": "I",
+   "label_id": 8,
+   "class": "RORO",
+   "train_n": 86,
+   "test_n": 14,
+   "train_share_pct": 15.1,
+   "test_share_pct": 13.5
+  },
+  {
+   "letter": "J",
+   "label_id": 9,
+   "class": "Sailboat",
+   "train_n": 22,
+   "test_n": 3,
+   "train_share_pct": 3.9,
+   "test_share_pct": 2.9
+  },
+  {
+   "letter": "K",
+   "label_id": 10,
+   "class": "Trawler",
+   "train_n": 7,
+   "test_n": 2,
+   "train_share_pct": 1.2,
+   "test_share_pct": 1.9
+  },
+  {
+   "letter": "L",
+   "label_id": 11,
+   "class": "Tugboat",
+   "train_n": 9,
+   "test_n": 0,
+   "train_share_pct": 1.6,
+   "test_share_pct": 0.0
+  }
+ ],
+ "collapse": [
+  {
+   "experiment": "fusion_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_fusionaudio+demon_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 103,
+   "modal_share": 0.9904,
+   "G_pred_count": 0,
+   "clip_acc": 0.028846153846153848
+  },
+  {
+   "experiment": "lalm_prompting_qwen2_audio_shipsear_zero_shot_shot0_clip30.0_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 47,
+   "modal_share": 0.4519,
+   "G_pred_count": 0,
+   "clip_acc": 0.038461538461538464
+  },
+  {
+   "experiment": "lalm_prompting_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 84,
+   "modal_share": 0.8077,
+   "G_pred_count": 0,
+   "clip_acc": 0.19230769230769232
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_specdemon_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 104,
+   "modal_share": 1.0,
+   "G_pred_count": 0,
+   "clip_acc": 0.019230769230769232
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_specmel_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 104,
+   "modal_share": 1.0,
+   "G_pred_count": 0,
+   "clip_acc": 0.019230769230769232
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_omni_30b_shipsear_zero_shot_shot0_clip30.0_specstft_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 104,
+   "modal_share": 1.0,
+   "G_pred_count": 0,
+   "clip_acc": 0.019230769230769232
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_vl_32b_shipsear_zero_shot_shot0_clip30.0_specdemon_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 100,
+   "modal_share": 0.9615,
+   "G_pred_count": 0,
+   "clip_acc": 0.019230769230769232
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_vl_32b_shipsear_zero_shot_shot0_clip30.0_specmel_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 80,
+   "modal_share": 0.7692,
+   "G_pred_count": 0,
+   "clip_acc": 0.125
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_vl_32b_shipsear_zero_shot_shot0_clip30.0_specstft_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "K",
+   "modal_label": 10,
+   "modal_class": "Trawler",
+   "modal_count": 82,
+   "modal_share": 0.7885,
+   "G_pred_count": 0,
+   "clip_acc": 0.11538461538461539
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_vl_8b_shipsear_zero_shot_shot0_clip30.0_specdemon_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "E",
+   "modal_label": 4,
+   "modal_class": "Natural",
+   "modal_count": 88,
+   "modal_share": 0.8462,
+   "G_pred_count": 0,
+   "clip_acc": 0.18269230769230768
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_vl_8b_shipsear_zero_shot_shot0_clip30.0_specmel_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "E",
+   "modal_label": 4,
+   "modal_class": "Natural",
+   "modal_count": 104,
+   "modal_share": 1.0,
+   "G_pred_count": 0,
+   "clip_acc": 0.18269230769230768
+  },
+  {
+   "experiment": "vlm_spectrogram_qwen3_vl_8b_shipsear_zero_shot_shot0_clip30.0_specstft_langen_enrichnone",
+   "n_pred": 104,
+   "modal_letter": "E",
+   "modal_label": 4,
+   "modal_class": "Natural",
+   "modal_count": 104,
+   "modal_share": 1.0,
+   "G_pred_count": 0,
+   "clip_acc": 0.18269230769230768
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+name: qwen3_vl_32b
+path: /models/Qwen3-VL-32B-Instruct
+device_map: auto      # ~64GB FP16 across both L20
+target_sr: 16000
+torch_dtype: bfloat16

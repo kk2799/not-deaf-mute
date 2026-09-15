@@ -1,0 +1,4 @@
+name: baseline_classifier
+arch: beats         # beats | wavlm | efficientnet | crnn | mht_transformer | cnn1d
+epochs: 100
+lr: 1.0e-3

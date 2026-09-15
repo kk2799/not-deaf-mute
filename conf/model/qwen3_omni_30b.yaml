@@ -1,0 +1,7 @@
+name: qwen3_omni_30b
+path: /models/Qwen3-Omni-30B-A3B-Instruct
+device_map: auto      # MoE 30B/A3B ~60GB across both L20
+target_sr: 16000
+torch_dtype: bfloat16
+# Omni-modal: covers both 评测 B (audio) and 评测 A (spectrogram image).
+# Wrapper (splash.models.lalm.Qwen3OmniModel) wired when download completes.

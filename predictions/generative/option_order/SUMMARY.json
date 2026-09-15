@@ -1,0 +1,94 @@
+[
+ {
+  "key": "vl8b.mel",
+  "perm_accs": [
+   0.3,
+   0.25,
+   0.24,
+   0.25,
+   0.25,
+   0.25,
+   0.24,
+   0.28
+  ],
+  "perm_mean_acc": 0.2575,
+  "acc_range": [
+   0.24,
+   0.3
+  ],
+  "class_flip_rate": 1.0,
+  "position_anchored_frac": 0.0,
+  "orig_acc_same_clips": 0.3,
+  "dominant_class": "Oil tanker",
+  "dominant_frac": 0.5175
+ },
+ {
+  "key": "vl8b.demon",
+  "perm_accs": [
+   0.31,
+   0.25,
+   0.18,
+   0.26,
+   0.25,
+   0.24,
+   0.25,
+   0.27
+  ],
+  "perm_mean_acc": 0.25125,
+  "acc_range": [
+   0.18,
+   0.31
+  ],
+  "class_flip_rate": 1.0,
+  "position_anchored_frac": 0.0,
+  "orig_acc_same_clips": 0.31,
+  "dominant_class": "Oil tanker",
+  "dominant_frac": 0.505
+ },
+ {
+  "key": "omni.audio",
+  "perm_accs": [
+   0.25,
+   0.25,
+   0.25,
+   0.27,
+   0.25,
+   0.28,
+   0.26,
+   0.2
+  ],
+  "perm_mean_acc": 0.25125,
+  "acc_range": [
+   0.2,
+   0.28
+  ],
+  "class_flip_rate": 1.0,
+  "position_anchored_frac": 0.0,
+  "orig_acc_same_clips": 0.25,
+  "dominant_class": "Cargo ship",
+  "dominant_frac": 0.5175
+ },
+ {
+  "key": "omni.mel",
+  "perm_accs": [
+   0.23,
+   0.25,
+   0.25,
+   0.23,
+   0.25,
+   0.27,
+   0.21,
+   0.27
+  ],
+  "perm_mean_acc": 0.245,
+  "acc_range": [
+   0.21,
+   0.27
+  ],
+  "class_flip_rate": 1.0,
+  "position_anchored_frac": 0.0,
+  "orig_acc_same_clips": 0.23,
+  "dominant_class": "Cargo ship",
+  "dominant_frac": 0.62125
+ }
+]

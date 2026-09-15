@@ -1,0 +1,36 @@
+{
+ "analysis": "A7 recording-level majority-vote aggregation of released per-clip predictions (post-hoc, no new model runs)",
+ "protocol": "majority vote over clip predictions per test recording; ties broken to lowest label id; 153 recordings",
+ "arms": {
+  "s1_beats": {
+   "clip_acc": 0.743389199255121,
+   "n_recordings": 153,
+   "rec_majority_acc": 0.7712418300653595
+  },
+  "B2t": {
+   "clip_acc": 0.768342644320298,
+   "n_recordings": 153,
+   "rec_majority_acc": 0.8169934640522876
+  },
+  "A1": {
+   "clip_acc": 0.7430167597765364,
+   "n_recordings": 153,
+   "rec_majority_acc": 0.8169934640522876
+  },
+  "s1_omni_aud": {
+   "clip_acc": 0.6945996275605214,
+   "n_recordings": 153,
+   "rec_majority_acc": 0.7712418300653595
+  },
+  "s1_q2a_aud": {
+   "clip_acc": 0.6819366852886406,
+   "n_recordings": 153,
+   "rec_majority_acc": 0.7908496732026143
+  },
+  "s1_vl8b_mel": {
+   "clip_acc": 0.6737430167597765,
+   "n_recordings": 153,
+   "rec_majority_acc": 0.738562091503268
+  }
+ }
+}

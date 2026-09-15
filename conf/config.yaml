@@ -1,0 +1,30 @@
+# SPLASH main config — compose one option per group.
+# Usage:
+#   python scripts/run_eval.py                                  # defaults below
+#   python scripts/run_eval.py regime=few_shot regime.shot=5     # override
+#   python scripts/run_eval.py -m regime=few_shot regime.shot=1,5,10,20   # sweep
+defaults:
+  - data: deepship
+  - model: qwen2_audio
+  - eval: lalm_prompting
+  - regime: zero_shot
+  - spectrogram: mel
+  - _self_
+
+# Top-level (shared across paradigms)
+lang: en            # en | zh  (prompt language; 中/英 ablation)
+enrich: none        # none | synthetic | real  (text-enhancement variant)
+seed: 0
+eval_split: test
+limit: null         # cap #test clips (quick validation); null = full split
+max_recordings: null  # cap #test recordings (keeps all their clips)
+
+hydra:
+  job:
+    chdir: false       # keep cwd = project root so relative outputs/ paths resolve
+  run:
+    dir: .             # single run: don't create outputs/<date>/ clutter; log to stdout
+  output_subdir: null  # don't dump .hydra/ config snapshot into cwd
+  sweep:
+    dir: outputs/multirun    # only sweeps get their own dir (one subdir per job)
+    subdir: ${hydra.job.num}

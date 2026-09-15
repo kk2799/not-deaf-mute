@@ -1,0 +1,65 @@
+[
+ {
+  "arm": "s1_omni_aud",
+  "source": "omni_aud",
+  "layer": 11,
+  "C": 0.01,
+  "acc": 0.6946,
+  "f1_macro": 0.6936,
+  "n": 2685
+ },
+ {
+  "arm": "s1_omni_mel",
+  "source": "omni_mel",
+  "layer": 2,
+  "C": 0.01,
+  "acc": 0.6648,
+  "f1_macro": 0.6632,
+  "n": 2685
+ },
+ {
+  "arm": "s1_q2a_aud",
+  "source": "q2a_aud",
+  "layer": 18,
+  "C": 0.01,
+  "acc": 0.6819,
+  "f1_macro": 0.6805,
+  "n": 2685
+ },
+ {
+  "arm": "s1_vl32b_mel",
+  "source": "vl32b_mel",
+  "layer": 10,
+  "C": 0.01,
+  "acc": 0.6685,
+  "f1_macro": 0.6679,
+  "n": 2685
+ },
+ {
+  "arm": "s1_vl32b_stft",
+  "source": "vl32b_stft",
+  "layer": 7,
+  "C": 0.01,
+  "acc": 0.6547,
+  "f1_macro": 0.6537,
+  "n": 2685
+ },
+ {
+  "arm": "s1_vl8b_mel",
+  "source": "vl8b_mel",
+  "layer": 3,
+  "C": 0.01,
+  "acc": 0.6737,
+  "f1_macro": 0.6732,
+  "n": 2685
+ },
+ {
+  "arm": "s1_vl8b_stft",
+  "source": "vl8b_stft",
+  "layer": 3,
+  "C": 0.01,
+  "acc": 0.6499,
+  "f1_macro": 0.6477,
+  "n": 2685
+ }
+]

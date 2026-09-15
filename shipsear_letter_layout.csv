@@ -1,0 +1,13 @@
+letter,label_id,class_name,n_train,n_test
+A,0,Dredger,13,6
+B,1,Fishboat,20,3
+C,2,Motorboat,53,9
+D,3,Mussel boat,36,11
+E,4,Natural ambient noise,21,19
+F,5,Ocean liner,57,5
+G,6,Passengers,239,30
+H,7,Pilot ship,6,2
+I,8,RORO,86,14
+J,9,Sailboat,22,3
+K,10,Trawler,7,2
+L,11,Tugboat,9,0

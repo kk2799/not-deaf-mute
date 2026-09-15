@@ -1,0 +1,4 @@
+name: linear_probe
+layers: all         # list of layer ids or "all"
+probe: logistic     # logistic | svc
+cv_folds: 5

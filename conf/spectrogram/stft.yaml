@@ -1,0 +1,10 @@
+# STFT 谱图（复用 fea-extract.get_stft_feature：50ms/25ms 分帧，Hamming，预加重0.97，10-8000Hz）
+name: stft
+mode: stft
+sample_rate: 22500          # fea_extract 统一 22500Hz
+frame_length_ms: 50
+frame_shift_ms: 25
+high_freq: 8000
+low_freq: 10
+apply_mvn: true             # 每片段波形 MVN（与 fea_extract 一致）
+cmap: viridis

@@ -1,0 +1,1957 @@
+{
+ "experiment": "option_order_vl8b.mel_p5",
+ "permutation": [
+  1,
+  0,
+  2,
+  3
+ ],
+ "n": 100,
+ "acc": 0.25,
+ "metrics_clip": {
+  "n": 100,
+  "accuracy": 0.25,
+  "f1_macro": 0.1,
+  "f1_weighted": 0.1,
+  "f1_per_class": {
+   "Cargo ship": 0.4,
+   "Passenger ship": 0.0,
+   "Oil tanker": 0.0,
+   "Tug boat": 0.0
+  },
+  "confusion_matrix": [
+   [
+    25,
+    0,
+    0,
+    0
+   ],
+   [
+    25,
+    0,
+    0,
+    0
+   ],
+   [
+    25,
+    0,
+    0,
+    0
+   ],
+   [
+    25,
+    0,
+    0,
+    0
+   ]
+  ],
+  "confusion_matrix_labels": [
+   "Cargo ship",
+   "Passenger ship",
+   "Oil tanker",
+   "Tug boat"
+  ]
+ },
+ "predictions": [
+  {
+   "recording_id": "0_79",
+   "clip_idx": 13,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.383228302001953,
+    "B": -22.320728302001953,
+    "C": -25.195728302001953,
+    "D": -26.133228302001953
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_18",
+   "clip_idx": 5,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.58451271057129,
+    "B": -22.14701271057129,
+    "C": -24.39701271057129,
+    "D": -24.02201271057129
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_83",
+   "clip_idx": 15,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.7282657623291,
+    "B": -21.9782657623291,
+    "C": -24.4782657623291,
+    "D": -24.9157657623291
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_4",
+   "clip_idx": 7,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.713016510009766,
+    "B": -22.088016510009766,
+    "C": -24.838016510009766,
+    "D": -26.213016510009766
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_35",
+   "clip_idx": 10,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.280553817749023,
+    "B": -22.718053817749023,
+    "C": -25.343053817749023,
+    "D": -26.030553817749023
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_18",
+   "clip_idx": 14,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.076679229736328,
+    "B": -22.576679229736328,
+    "C": -25.326679229736328,
+    "D": -25.951679229736328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_72",
+   "clip_idx": 18,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.748432159423828,
+    "B": -22.685932159423828,
+    "C": -25.810932159423828,
+    "D": -26.123432159423828
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_48",
+   "clip_idx": 26,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.36125373840332,
+    "B": -22.73625373840332,
+    "C": -25.11125373840332,
+    "D": -26.17375373840332
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_56",
+   "clip_idx": 9,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.763870239257812,
+    "B": -22.201370239257812,
+    "C": -24.951370239257812,
+    "D": -25.388870239257812
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_104",
+   "clip_idx": 4,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.562227249145508,
+    "B": -22.312227249145508,
+    "C": -24.312227249145508,
+    "D": -24.937227249145508
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_2",
+   "clip_idx": 16,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.250995635986328,
+    "B": -22.063495635986328,
+    "C": -25.125995635986328,
+    "D": -25.375995635986328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_32",
+   "clip_idx": 27,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.701370239257812,
+    "B": -23.076370239257812,
+    "C": -25.951370239257812,
+    "D": -26.326370239257812
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_92",
+   "clip_idx": 5,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.123947143554688,
+    "B": -22.186447143554688,
+    "C": -25.311447143554688,
+    "D": -25.686447143554688
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_40",
+   "clip_idx": 30,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.152978897094727,
+    "B": -21.965478897094727,
+    "C": -24.590478897094727,
+    "D": -25.340478897094727
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_30",
+   "clip_idx": 4,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.99845314025879,
+    "B": -22.12345314025879,
+    "C": -24.62345314025879,
+    "D": -24.93595314025879
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_32",
+   "clip_idx": 23,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.961109161376953,
+    "B": -22.211109161376953,
+    "C": -24.961109161376953,
+    "D": -24.961109161376953
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_35",
+   "clip_idx": 15,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.51923370361328,
+    "B": -22.14423370361328,
+    "C": -24.26923370361328,
+    "D": -25.26923370361328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_2",
+   "clip_idx": 20,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.82859230041504,
+    "B": -22.64109230041504,
+    "C": -24.76609230041504,
+    "D": -25.89109230041504
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_68",
+   "clip_idx": 4,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.59286117553711,
+    "B": -21.96786117553711,
+    "C": -24.90536117553711,
+    "D": -24.59286117553711
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_5",
+   "clip_idx": 3,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.826370239257812,
+    "B": -22.326370239257812,
+    "C": -25.076370239257812,
+    "D": -25.451370239257812
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_48",
+   "clip_idx": 7,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.30584716796875,
+    "B": -22.43084716796875,
+    "C": -25.43084716796875,
+    "D": -26.49334716796875
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_32",
+   "clip_idx": 20,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.196157455444336,
+    "B": -22.571157455444336,
+    "C": -25.321157455444336,
+    "D": -26.258657455444336
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_32",
+   "clip_idx": 12,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.661062240600586,
+    "B": -21.848562240600586,
+    "C": -24.661062240600586,
+    "D": -24.911062240600586
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_40",
+   "clip_idx": 7,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.841552734375,
+    "B": -22.341552734375,
+    "C": -24.341552734375,
+    "D": -24.216552734375
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "0_30",
+   "clip_idx": 16,
+   "label_id": 0,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.733821868896484,
+    "B": -21.983821868896484,
+    "C": -24.358821868896484,
+    "D": -25.858821868896484
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_122",
+   "clip_idx": 18,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -30.034164428710938,
+    "B": -23.596664428710938,
+    "C": -25.221664428710938,
+    "D": -26.471664428710938
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_179",
+   "clip_idx": 0,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.48655128479004,
+    "B": -22.11155128479004,
+    "C": -24.61155128479004,
+    "D": -25.61155128479004
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_142",
+   "clip_idx": 18,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.280330657958984,
+    "B": -22.217830657958984,
+    "C": -23.717830657958984,
+    "D": -25.280330657958984
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_101",
+   "clip_idx": 35,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.258644104003906,
+    "B": -22.508644104003906,
+    "C": -24.508644104003906,
+    "D": -26.446144104003906
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_7",
+   "clip_idx": 12,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.400426864624023,
+    "B": -22.962926864624023,
+    "C": -25.462926864624023,
+    "D": -26.775426864624023
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_37",
+   "clip_idx": 3,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.018823623657227,
+    "B": -22.081323623657227,
+    "C": -24.831323623657227,
+    "D": -25.143823623657227
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_101",
+   "clip_idx": 30,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.1777400970459,
+    "B": -22.2402400970459,
+    "C": -24.7402400970459,
+    "D": -25.6152400970459
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_179",
+   "clip_idx": 40,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.131874084472656,
+    "B": -22.319374084472656,
+    "C": -25.194374084472656,
+    "D": -26.381874084472656
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_2",
+   "clip_idx": 21,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -30.17924690246582,
+    "B": -23.17924690246582,
+    "C": -26.17924690246582,
+    "D": -27.24174690246582
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_117",
+   "clip_idx": 20,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.343746185302734,
+    "B": -22.343746185302734,
+    "C": -24.968746185302734,
+    "D": -25.468746185302734
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_179",
+   "clip_idx": 19,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.790130615234375,
+    "B": -21.852630615234375,
+    "C": -24.602630615234375,
+    "D": -24.790130615234375
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_125",
+   "clip_idx": 31,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.633657455444336,
+    "B": -22.071157455444336,
+    "C": -24.821157455444336,
+    "D": -25.696157455444336
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_62",
+   "clip_idx": 6,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.756874084472656,
+    "B": -22.069374084472656,
+    "C": -24.819374084472656,
+    "D": -26.194374084472656
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_179",
+   "clip_idx": 18,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.39331817626953,
+    "B": -22.45581817626953,
+    "C": -25.08081817626953,
+    "D": -25.39331817626953
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_142",
+   "clip_idx": 15,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.769983291625977,
+    "B": -22.582483291625977,
+    "C": -24.207483291625977,
+    "D": -26.769983291625977
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_2",
+   "clip_idx": 10,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.58179473876953,
+    "B": -22.33179473876953,
+    "C": -26.01929473876953,
+    "D": -24.33179473876953
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_76",
+   "clip_idx": 19,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.92405128479004,
+    "B": -22.36155128479004,
+    "C": -24.98655128479004,
+    "D": -26.17405128479004
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_46",
+   "clip_idx": 16,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -30.17099952697754,
+    "B": -22.73349952697754,
+    "C": -24.98349952697754,
+    "D": -26.42099952697754
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_130",
+   "clip_idx": 4,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.81755256652832,
+    "B": -22.69255256652832,
+    "C": -25.56755256652832,
+    "D": -26.94255256652832
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_46",
+   "clip_idx": 10,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.139179229736328,
+    "B": -22.701679229736328,
+    "C": -25.576679229736328,
+    "D": -26.139179229736328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_45",
+   "clip_idx": 17,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.15073013305664,
+    "B": -22.83823013305664,
+    "C": -25.33823013305664,
+    "D": -26.46323013305664
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_130",
+   "clip_idx": 12,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.006359100341797,
+    "B": -22.443859100341797,
+    "C": -25.381359100341797,
+    "D": -25.443859100341797
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_23",
+   "clip_idx": 7,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.171875,
+    "B": -22.296875,
+    "C": -25.734375,
+    "D": -26.171875
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_167",
+   "clip_idx": 0,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -26.717823028564453,
+    "B": -21.405323028564453,
+    "C": -25.342823028564453,
+    "D": -26.155323028564453
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "1_76",
+   "clip_idx": 7,
+   "label_id": 1,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.089937210083008,
+    "B": -22.089937210083008,
+    "C": -24.839937210083008,
+    "D": -25.652437210083008
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_62",
+   "clip_idx": 0,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.106260299682617,
+    "B": -22.168760299682617,
+    "C": -25.543760299682617,
+    "D": -26.481260299682617
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_82",
+   "clip_idx": 13,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.58403778076172,
+    "B": -22.45903778076172,
+    "C": -24.20903778076172,
+    "D": -26.27153778076172
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_25",
+   "clip_idx": 21,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.090478897094727,
+    "B": -22.715478897094727,
+    "C": -25.090478897094727,
+    "D": -26.277978897094727
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_201",
+   "clip_idx": 18,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.523441314697266,
+    "B": -22.023441314697266,
+    "C": -24.023441314697266,
+    "D": -24.835941314697266
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_22",
+   "clip_idx": 3,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.367977142333984,
+    "B": -21.992977142333984,
+    "C": -24.242977142333984,
+    "D": -25.117977142333984
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_171",
+   "clip_idx": 10,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -26.868694305419922,
+    "B": -21.556194305419922,
+    "C": -25.306194305419922,
+    "D": -23.931194305419922
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_15",
+   "clip_idx": 14,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.559797286987305,
+    "B": -22.059797286987305,
+    "C": -25.059797286987305,
+    "D": -25.809797286987305
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_3",
+   "clip_idx": 14,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.273672103881836,
+    "B": -22.586172103881836,
+    "C": -25.086172103881836,
+    "D": -26.523672103881836
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_144",
+   "clip_idx": 2,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.80821418762207,
+    "B": -22.55821418762207,
+    "C": -25.68321418762207,
+    "D": -26.24571418762207
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_14",
+   "clip_idx": 0,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.4791316986084,
+    "B": -22.2916316986084,
+    "C": -25.5416316986084,
+    "D": -26.9791316986084
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_25",
+   "clip_idx": 9,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.659927368164062,
+    "B": -22.472427368164062,
+    "C": -25.222427368164062,
+    "D": -25.659927368164062
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_192",
+   "clip_idx": 12,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.27310562133789,
+    "B": -22.21060562133789,
+    "C": -24.96060562133789,
+    "D": -24.96060562133789
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_205",
+   "clip_idx": 3,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.368942260742188,
+    "B": -22.556442260742188,
+    "C": -23.556442260742188,
+    "D": -24.681442260742188
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_7",
+   "clip_idx": 13,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.650188446044922,
+    "B": -22.837688446044922,
+    "C": -25.462688446044922,
+    "D": -26.650188446044922
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_217",
+   "clip_idx": 13,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.527978897094727,
+    "B": -22.215478897094727,
+    "C": -24.840478897094727,
+    "D": -25.777978897094727
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_15",
+   "clip_idx": 8,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.374608993530273,
+    "B": -21.562108993530273,
+    "C": -24.937108993530273,
+    "D": -25.312108993530273
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_82",
+   "clip_idx": 15,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.743907928466797,
+    "B": -22.181407928466797,
+    "C": -25.431407928466797,
+    "D": -26.181407928466797
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_3",
+   "clip_idx": 18,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.023672103881836,
+    "B": -22.461172103881836,
+    "C": -24.836172103881836,
+    "D": -26.336172103881836
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_8",
+   "clip_idx": 0,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.739370346069336,
+    "B": -22.489370346069336,
+    "C": -24.739370346069336,
+    "D": -25.676870346069336
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_186",
+   "clip_idx": 0,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.133657455444336,
+    "B": -22.696157455444336,
+    "C": -25.446157455444336,
+    "D": -26.321157455444336
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_178",
+   "clip_idx": 30,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.998451232910156,
+    "B": -22.123451232910156,
+    "C": -24.373451232910156,
+    "D": -24.873451232910156
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_89",
+   "clip_idx": 3,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.799386978149414,
+    "B": -21.924386978149414,
+    "C": -23.924386978149414,
+    "D": -25.236886978149414
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_79",
+   "clip_idx": 1,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.18134307861328,
+    "B": -22.11884307861328,
+    "C": -24.61884307861328,
+    "D": -25.18134307861328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_7",
+   "clip_idx": 25,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.451679229736328,
+    "B": -21.951679229736328,
+    "C": -24.951679229736328,
+    "D": -25.139179229736328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "2_7",
+   "clip_idx": 6,
+   "label_id": 2,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.552326202392578,
+    "B": -22.427326202392578,
+    "C": -24.177326202392578,
+    "D": -25.302326202392578
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_44",
+   "clip_idx": 6,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.850217819213867,
+    "B": -22.537717819213867,
+    "C": -26.037717819213867,
+    "D": -26.537717819213867
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_25",
+   "clip_idx": 52,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.774568557739258,
+    "B": -21.774568557739258,
+    "C": -24.149568557739258,
+    "D": -24.712068557739258
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_24",
+   "clip_idx": 4,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.90201187133789,
+    "B": -21.90201187133789,
+    "C": -23.40201187133789,
+    "D": -24.52701187133789
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_8",
+   "clip_idx": 10,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.089937210083008,
+    "B": -22.214937210083008,
+    "C": -24.839937210083008,
+    "D": -25.652437210083008
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_32",
+   "clip_idx": 20,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.73655128479004,
+    "B": -22.23655128479004,
+    "C": -24.73655128479004,
+    "D": -25.92405128479004
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_44",
+   "clip_idx": 5,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.07758331298828,
+    "B": -22.32758331298828,
+    "C": -25.20258331298828,
+    "D": -25.64008331298828
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_33",
+   "clip_idx": 22,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.77971839904785,
+    "B": -21.84221839904785,
+    "C": -24.84221839904785,
+    "D": -24.34221839904785
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_40",
+   "clip_idx": 2,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.426342010498047,
+    "B": -22.613842010498047,
+    "C": -25.113842010498047,
+    "D": -25.738842010498047
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_37",
+   "clip_idx": 1,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.523609161376953,
+    "B": -22.586109161376953,
+    "C": -25.461109161376953,
+    "D": -25.461109161376953
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_59",
+   "clip_idx": 38,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.784927368164062,
+    "B": -22.472427368164062,
+    "C": -25.222427368164062,
+    "D": -25.597427368164062
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_44",
+   "clip_idx": 1,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.559972763061523,
+    "B": -22.684972763061523,
+    "C": -25.684972763061523,
+    "D": -26.122472763061523
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_29",
+   "clip_idx": 8,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.74384307861328,
+    "B": -21.86884307861328,
+    "C": -24.43134307861328,
+    "D": -25.05634307861328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_24",
+   "clip_idx": 91,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.42405128479004,
+    "B": -22.11155128479004,
+    "C": -24.36155128479004,
+    "D": -25.61155128479004
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_24",
+   "clip_idx": 100,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.73341178894043,
+    "B": -22.29591178894043,
+    "C": -24.17091178894043,
+    "D": -25.85841178894043
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_25",
+   "clip_idx": 18,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.544422149658203,
+    "B": -22.231922149658203,
+    "C": -24.731922149658203,
+    "D": -26.231922149658203
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_33",
+   "clip_idx": 34,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.734272003173828,
+    "B": -21.859272003173828,
+    "C": -24.546772003173828,
+    "D": -24.546772003173828
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_7",
+   "clip_idx": 15,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.9132137298584,
+    "B": -22.4132137298584,
+    "C": -26.0382137298584,
+    "D": -25.5382137298584
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_18",
+   "clip_idx": 19,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.16106414794922,
+    "B": -21.47356414794922,
+    "C": -24.16106414794922,
+    "D": -24.53606414794922
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_24",
+   "clip_idx": 34,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -29.2591609954834,
+    "B": -22.8841609954834,
+    "C": -24.8841609954834,
+    "D": -26.7591609954834
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_33",
+   "clip_idx": 12,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.47603416442871,
+    "B": -22.16353416442871,
+    "C": -25.78853416442871,
+    "D": -25.47603416442871
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_27",
+   "clip_idx": 32,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -26.957805633544922,
+    "B": -21.582805633544922,
+    "C": -24.457805633544922,
+    "D": -24.457805633544922
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_25",
+   "clip_idx": 1,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -27.938495635986328,
+    "B": -21.438495635986328,
+    "C": -24.813495635986328,
+    "D": -24.938495635986328
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_25",
+   "clip_idx": 2,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.563182830810547,
+    "B": -21.813182830810547,
+    "C": -24.938182830810547,
+    "D": -25.313182830810547
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_25",
+   "clip_idx": 31,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.366531372070312,
+    "B": -22.429031372070312,
+    "C": -25.866531372070312,
+    "D": -25.866531372070312
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  },
+  {
+   "recording_id": "3_24",
+   "clip_idx": 109,
+   "label_id": 3,
+   "pred_letter": "B",
+   "pred_label_id": 0,
+   "choice_logprobs": {
+    "A": -28.030302047729492,
+    "B": -22.280302047729492,
+    "C": -24.280302047729492,
+    "D": -24.842802047729492
+   },
+   "letter_to_label": {
+    "A": 1,
+    "B": 0,
+    "C": 2,
+    "D": 3
+   }
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+name: deepship
+root: /datasets/audio/deepship
+clip_len: 30        # seconds (duration ablation: override via CLI)
+overlap: 0.5        # fraction in [0,1)
+manifest_dir: outputs/manifests

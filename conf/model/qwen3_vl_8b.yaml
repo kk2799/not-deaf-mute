@@ -1,0 +1,7 @@
+name: qwen3_vl_8b
+path: /models/Qwen3-VL-8B-Instruct
+device: cuda:0
+target_sr: 16000
+torch_dtype: bfloat16
+# 评测 A (VLM spectrogram). Wrapper (splash.models.vlm) wired when download
+# completes + the STFT/DEMON spectrogram transform is implemented.

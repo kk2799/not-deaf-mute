@@ -1,0 +1,35 @@
+[
+ {
+  "file": "lalm_prompting_qwen2_audio_deepship_zero_shot_shot0_clip30.0_langen_enrichnone.json",
+  "n": 2685,
+  "parse_rate": 1.0,
+  "class_name_mentions": 0,
+  "gen_text_examples": [
+   "A",
+   "A",
+   "A"
+  ]
+ },
+ {
+  "file": "vlm_spectrogram_qwen3_vl_8b_deepship_zero_shot_shot0_clip30.0_specmel_langen_enrichnone.json",
+  "n": 2685,
+  "parse_rate": 1.0,
+  "class_name_mentions": 0,
+  "gen_text_examples": [
+   "C",
+   "C",
+   "C"
+  ]
+ },
+ {
+  "file": "lalm_prompting_qwen3_omni_30b_deepship_zero_shot_shot0_clip30.0_langen_enrichnone.json",
+  "n": 2685,
+  "parse_rate": 1.0,
+  "class_name_mentions": 0,
+  "gen_text_examples": [
+   "A\nAssistant\nA",
+   "D\nAssistant\nD",
+   "D\nAssistant\nD"
+  ]
+ }
+]

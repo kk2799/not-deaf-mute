@@ -1,0 +1,5 @@
+name: qwen2_audio
+path: /models/Qwen2-Audio-7B-Instruct
+device: cuda:0
+target_sr: 16000      # Whisper-based audio encoder native rate
+torch_dtype: bfloat16

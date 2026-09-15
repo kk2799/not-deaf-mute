@@ -1,0 +1,12 @@
+# DEMON 谱（1D 平方解调包络谱）
+name: demon
+mode: demon
+sample_rate: 22500
+demon_low_frequency: 2000   # 带通下限 (Hz)
+demon_high_frequency: 8000  # 带通上限 (Hz)
+f_dem_max: 50               # 调制频率上限 (Hz)
+demon_dc_cut: 0.4           # <0.4Hz 置 0
+demon_cont_window_hz: 2.0   # 减连续谱平滑窗 (Hz)
+apply_mvn: true
+cmap: viridis
+# 流程：带通→平方解调→|FFT|→裁0-50Hz→<0.4置0→减连续谱(中值平滑)→min-max归一化（不转dB）

@@ -1,0 +1,686 @@
+{
+ "qwen2_audio": {
+  "free_text": {
+   "Which vessel type is most frequently recorded in underwater audio?": "Boats are the most frequently recorded vessels in underwater audio.",
+   "In underwater acoustic recordings, what is the most common type of ship?": "A fishing vessel is the most common type of ship in underwater acoustic recordings.",
+   "If I record random ocean traffic audio, which ship type am I most likely to capture?": "It is most likely a cargo ship.",
+   "Rank these vessel types by how often they appear in underwater recordings.": "Submarine is the most common type of vessel in underwater recordings.",
+   "Which of these ships is the most typical source of underwater noise?": "The most typical source of underwater noise is the sound of human voices, as well as sounds from boats and other water vehicles.",
+   "A hydrophone records a random vessel. What type is it most likely to be?": "It is likely a small boat.",
+   "Which vessel class dominates underwater acoustic datasets?": "Submarine classes dominate underwater acoustic datasets.",
+   "What kind of ship produces the background noise in most ocean recordings?": "A fishing boat.",
+   "You hear an unidentifiable distant vessel. What is your best guess for its type?": "It is difficult to determine without additional context, but it could be a small boat or a helicopter.",
+   "Which ship type would a random underwater recording most likely contain?": "A ship."
+  },
+  "mcq_no_media": {
+   "class_dist": {
+    "Oil tanker": 14,
+    "Cargo ship": 5,
+    "Passenger ship": 1
+   },
+   "letter_dist": {
+    "C": 6,
+    "B": 9,
+    "D": 5
+   },
+   "variants": {
+    "o0t0": {
+     "pred_letter": "C",
+     "pred_label": "Oil tanker",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t1": {
+     "pred_letter": "C",
+     "pred_label": "Oil tanker",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t2": {
+     "pred_letter": "C",
+     "pred_label": "Oil tanker",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t3": {
+     "pred_letter": "C",
+     "pred_label": "Oil tanker",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t4": {
+     "pred_letter": "C",
+     "pred_label": "Oil tanker",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o1t0": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t1": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t2": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t3": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t4": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o2t0": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t1": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t2": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t3": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t4": {
+     "pred_letter": "D",
+     "pred_label": "Passenger ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o3t0": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t1": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t2": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t3": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t4": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "qwen3_vl_8b": {
+  "free_text": {
+   "Which vessel type is most frequently recorded in underwater audio?": "The most frequently recorded vessel type in underwater audio is the commercial fishing vessel.",
+   "In underwater acoustic recordings, what is the most common type of ship?": "The most common type of ship in underwater acoustic recordings is the cargo ship.",
+   "If I record random ocean traffic audio, which ship type am I most likely to capture?": "You’re most likely to capture the sound of a container ship, as they are the most numerous and frequently active vessels in global ocean traffic.",
+   "Rank these vessel types by how often they appear in underwater recordings.": "Submarines appear most often in underwater recordings, followed by cargo ships, then fishing boats, and least often by sailboats.",
+   "Which of these ships is the most typical source of underwater noise?": "The most typical source of underwater noise is a ship’s propeller.",
+   "A hydrophone records a random vessel. What type is it most likely to be?": "Most likely a commercial cargo ship, due to their high frequency of operation and predictable patterns in busy waterways.",
+   "Which vessel class dominates underwater acoustic datasets?": "Surface ships dominate underwater acoustic datasets due to their prevalence and acoustic signature in maritime environments.",
+   "What kind of ship produces the background noise in most ocean recordings?": "The background noise in most ocean recordings is primarily produced by ships, especially large cargo vessels and tankers.",
+   "You hear an unidentifiable distant vessel. What is your best guess for its type?": "It’s likely a commercial cargo ship or tanker, as those are most commonly heard at sea due to their size and engine noise.",
+   "Which ship type would a random underwater recording most likely contain?": "A random underwater recording would most likely contain the sound of a submarine."
+  },
+  "mcq_no_media": {
+   "class_dist": {
+    "Cargo ship": 14,
+    "Passenger ship": 1,
+    "Oil tanker": 5
+   },
+   "letter_dist": {
+    "A": 3,
+    "B": 10,
+    "C": 6,
+    "D": 1
+   },
+   "variants": {
+    "o0t0": {
+     "pred_letter": "A",
+     "pred_label": "Cargo ship",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t1": {
+     "pred_letter": "A",
+     "pred_label": "Cargo ship",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t2": {
+     "pred_letter": "B",
+     "pred_label": "Passenger ship",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t3": {
+     "pred_letter": "C",
+     "pred_label": "Oil tanker",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t4": {
+     "pred_letter": "A",
+     "pred_label": "Cargo ship",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o1t0": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t1": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t2": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t3": {
+     "pred_letter": "B",
+     "pred_label": "Oil tanker",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t4": {
+     "pred_letter": "D",
+     "pred_label": "Cargo ship",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o2t0": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t1": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t2": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t3": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t4": {
+     "pred_letter": "B",
+     "pred_label": "Cargo ship",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o3t0": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t1": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t2": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t3": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t4": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ },
+ "qwen3_omni_30b": {
+  "free_text": {
+   "Which vessel type is most frequently recorded in underwater audio?": "Fishing vessels are most frequently recorded in underwater audio.\n水",
+   "In underwater acoustic recordings, what is the most common type of ship?": "The most common type of ship in underwater acoustic recordings is the cargo ship.\n#\nuced",
+   "If I record random ocean traffic audio, which ship type am I most likely to capture?": "You are most likely to capture a container ship, as they are the most numerous and frequent vessels in global ocean traffic.",
+   "Rank these vessel types by how often they appear in underwater recordings.": "Based on underwater recordings, the most common vessel types are commercial ships, followed by fishing boats, and then recreational boats.\n\nAssistant\nBased on underwater recordings, the most common vessel types are commercial ships,",
+   "Which of these ships is the most typical source of underwater noise?": "Cargo ships are the most typical source of underwater noise due to their constant engine operation and large propellers.\n\nAssistant: Cargo ships are the most typical source of underwater noise due to their constant engine operation and large",
+   "A hydrophone records a random vessel. What type is it most likely to be?": "It is most likely a submarine, as hydrophones are primarily used to detect underwater sounds from such vessels.\nn\nA hydrophone records a random vessel. What type is it most likely to be? Answer in one short",
+   "Which vessel class dominates underwater acoustic datasets?": "Submarines dominate underwater acoustic datasets due to their extensive operational use and distinct acoustic signatures.\n\nuced\nuced\nuced\nuced\nuced\nuced",
+   "What kind of ship produces the background noise in most ocean recordings?": "The background noise in most ocean recordings is produced by large ships, particularly cargo vessels and tankers, due to their engines and propellers.\n\n\n\nThe background noise in most ocean recordings is",
+   "You hear an unidentifiable distant vessel. What is your best guess for its type?": "It is likely a cargo ship or container vessel, based on the deep, rhythmic engine hum typical of large, slow-moving commercial vessels.\npoint\n\nIt is likely a cargo ship or container vessel, based",
+   "Which ship type would a random underwater recording most likely contain?": "A random underwater recording would most likely contain the sounds of a submarine.\n\n\nAssistant: A random underwater recording would most likely contain the sounds of a submarine."
+  },
+  "mcq_no_media": {
+   "class_dist": {
+    "Tug boat": 10,
+    "Cargo ship": 6,
+    "Oil tanker": 4
+   },
+   "letter_dist": {
+    "D": 14,
+    "C": 6
+   },
+   "variants": {
+    "o0t0": {
+     "pred_letter": "D",
+     "pred_label": "Tug boat",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t1": {
+     "pred_letter": "D",
+     "pred_label": "Tug boat",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t2": {
+     "pred_letter": "D",
+     "pred_label": "Tug boat",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t3": {
+     "pred_letter": "D",
+     "pred_label": "Tug boat",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o0t4": {
+     "pred_letter": "D",
+     "pred_label": "Tug boat",
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ]
+    },
+    "o1t0": {
+     "pred_letter": "D",
+     "pred_label": "Cargo ship",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t1": {
+     "pred_letter": "D",
+     "pred_label": "Cargo ship",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t2": {
+     "pred_letter": "D",
+     "pred_label": "Cargo ship",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t3": {
+     "pred_letter": "D",
+     "pred_label": "Cargo ship",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o1t4": {
+     "pred_letter": "D",
+     "pred_label": "Cargo ship",
+     "order": [
+      3,
+      2,
+      1,
+      0
+     ]
+    },
+    "o2t0": {
+     "pred_letter": "C",
+     "pred_label": "Tug boat",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t1": {
+     "pred_letter": "C",
+     "pred_label": "Tug boat",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t2": {
+     "pred_letter": "C",
+     "pred_label": "Tug boat",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t3": {
+     "pred_letter": "C",
+     "pred_label": "Tug boat",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o2t4": {
+     "pred_letter": "C",
+     "pred_label": "Tug boat",
+     "order": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "o3t0": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t1": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t2": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t3": {
+     "pred_letter": "C",
+     "pred_label": "Cargo ship",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "o3t4": {
+     "pred_letter": "D",
+     "pred_label": "Oil tanker",
+     "order": [
+      1,
+      3,
+      0,
+      2
+     ]
+    }
+   }
+  }
+ }
+}
