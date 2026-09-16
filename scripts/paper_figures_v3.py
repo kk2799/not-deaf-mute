@@ -1,14 +1,15 @@
 #!/usr/bin/env python
-"""Generate the three paper figures from experiment outputs.
+"""SPLASH ICASSP figures v3 — message-first redesign.
 
-fig1: two panels -- (a) all 44 generative conditions vs the chance lines,
-      (b) recovery routes as gain-over-chance bars.
-fig2: four panels -- (a) predicted-class collapse distributions, (b) the
-      shuffle test, (c) the silence test as a sorted KL dot plot, (d)
-      position profiles.
-fig3: per-layer probe curves with the honest audio-path band.
-All values are read from real experiment outputs; nothing is synthetic.
-Run: python scripts/paper_figures_v3.py
+One panel, one message, stated IN the figure (bold takeaway lines).
+fig1: two panels — (a) the exam (44 conditions vs chance, dose inset moved
+      into (b)) — (b) the ladder as gain-over-chance bars.
+fig2: four panels — (c) redesigned from 9 rotated-label log bars + twin axis
+      to a sorted horizontal dot plot (horizontal labels, no twin axis).
+fig3: unchanged content from v2 (already single-message).
+All values from real experiment outputs. Print size = design size
+(fig1/2 at 0.83\\textwidth ~ 5.94in, fig3 at 0.85\\columnwidth ~ 2.95in).
+Run in container: python scripts/paper_figures_v3.py
 """
 import csv
 import json
@@ -95,7 +96,7 @@ def fig1():
              ("vl32b" if m == "qwen3_vl_32b" else "omni"))
         by[f][r["dataset"]].append(float(r["clip_acc"]))
 
-    fig = plt.figure(figsize=(5.95, 1.52))
+    fig = plt.figure(figsize=(5.95, 1.46))
     gs = fig.add_gridspec(1, 2, width_ratios=[1.06, 1.0], wspace=0.30,
                           left=0.085, right=0.99, top=0.90, bottom=0.24)
 
@@ -106,7 +107,8 @@ def fig1():
     for yi, f in enumerate(fams):
         ds, ss = by[f]["deepship"], by[f]["shipsear"]
         dys = [yi + offs[i % 7] for i in range(len(ds))]
-        axA.scatter(ds, dys, s=15, c=fc[f], zorder=3, edgecolors="none")
+        axA.scatter(ds, dys, s=15, c=fc[f], zorder=3, edgecolors="none",
+                    alpha=0.65)
         if ds:
             i = max(range(len(ds)), key=lambda k: ds[k])
             if ds[i] > best[0]:
@@ -119,12 +121,12 @@ def fig1():
     axA.axvline(1/12, color=GREY, lw=0.9, ls=":", zorder=2)
     axA.text(1/12, 3.52, "chance 1/12", fontsize=6.5, ha="center", va="top",
              color=GREY, zorder=6, bbox=dict(fc="white", ec="none", pad=0.8))
-    axA.set_xlim(0, 0.33); axA.set_ylim(-0.5, 3.55)
+    axA.set_xlim(-0.005, 0.33); axA.set_ylim(-0.5, 3.55)
     axA.set_xticks([0, 0.1, 0.2, 0.3])
     axA.set_yticks(range(4)); axA.set_yticklabels([fname[f] for f in fams])
     axA.set_xlabel("clip accuracy (44 conditions)")
     axA.grid(axis="y", visible=False)
-    style(axA); panel_below(axA, "(a)", y=-0.30)
+    style(axA); panel_below(axA, "(a)", y=-0.42)
 
     # (b) the ladder: gain over chance, bars
     axB = fig.add_subplot(gs[1])
@@ -155,6 +157,10 @@ def fig1():
         axB.text(x + 0.010, y, vtxt, fontsize=6.5, va="center", color=c)
     axB.axvline(CH, color=BLACK, lw=1.0, zorder=4)
     axB.text(CH + 0.004, 6.42, "chance", fontsize=6.5, color=BLACK, ha="left")
+    # axis-break marks: bars are truncated at chance (0.25), not zero
+    for dx in (0.010, 0.022):
+        axB.plot([CH + dx, CH + dx + 0.009], [-0.88, -0.54], color=BLACK,
+                 lw=1.0, clip_on=False, zorder=6)
     axB.set_xlim(CH, 0.88); axB.set_ylim(-0.7, 6.9)
     axB.set_xticks([0.25, 0.4, 0.6, 0.8])
     axB.set_yticks(ys); axB.set_yticklabels([r[0] for r in rungs])
@@ -165,7 +171,7 @@ def fig1():
     axB.legend(lhand, ["LLM-derived", "BEATs"], frameon=False,
                loc="upper right", bbox_to_anchor=(1.0, 1.0), fontsize=6,
                handlelength=1.0, borderaxespad=0)
-    style(axB); panel_below(axB, "(b)", y=-0.30)
+    style(axB); panel_below(axB, "(b)", y=-0.42)
     save(fig, "fig1_ladder.png")
 
 
@@ -300,12 +306,12 @@ def fig2():
             label="Omni", zorder=3)
     for x, v in zip(xs, prof["vl8b"]):
         if v > 0.04:
-            axD.text(x - w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6,
-                     ha="center", color=BLUE)
+            axD.text(x - w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6.5,
+                     fontweight="bold", ha="center", color=BLUE)
     for x, v in zip(xs, prof["omni"]):
         if v > 0.04:
-            axD.text(x + w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6,
-                     ha="center", color=ORANGE)
+            axD.text(x + w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6.5,
+                     fontweight="bold", ha="center", color=ORANGE)
     axD.set_xticks(xs); axD.set_xticklabels(["A", "B", "C", "D"])
     axD.set_ylim(0, 0.74)
     axD.set_yticks([0, 0.25, 0.5])
@@ -319,7 +325,7 @@ def fig2():
 
 # ---------------------------------------------------------------- fig3
 def fig3():
-    fig, ax = plt.subplots(figsize=(2.95, 1.46))
+    fig, ax = plt.subplots(figsize=(2.95, 1.38))
     fig.subplots_adjust(left=0.155, right=0.97, top=0.78, bottom=0.175)
     a4 = json.load(open(os.path.join(ROOT, "outputs/pilots/round1_analyses/a4_omni_band.json")))
     band = a4["band_honest"]
@@ -333,8 +339,10 @@ def fig3():
     acurve = sorted((e["layer"], e["test_acc"]) for e in a4["curve"])
     ax.plot([p[0] for p in acurve], [p[1] for p in acurve], "-", color=BLUE,
             lw=1.5, zorder=4, label="Omni audio")
-    ax.plot(*series("qwen3_omni_30b", "mel"), color=GREEN, lw=0.9, zorder=3, label="Omni mel")
-    ax.plot(*series("qwen3_omni_30b", "stft"), color=ORANGE, lw=0.9, zorder=3, label="Omni STFT")
+    ax.plot(*series("qwen3_omni_30b", "mel"), color=GREEN, lw=0.9, ls=":",
+            zorder=3, label="Omni mel")
+    ax.plot(*series("qwen3_omni_30b", "stft"), color=ORANGE, lw=0.9, ls="-.",
+            zorder=3, label="Omni STFT")
     b = json.load(open(os.path.join(ROOT, "outputs/pilots/beats_full_budget.json")))
     bc = b["stages"]["stage2_full_budget_layers"]["curves"]
     bc.sort(key=lambda e: e["layer"])
@@ -342,7 +350,7 @@ def fig3():
             lw=1.0, zorder=3, label="BEATs")
     ax.plot(band["selected_layer"], band["selected_test_acc"], "o", color=BLUE,
             ms=3.5, zorder=5)
-    ax.text(band["selected_layer"] + 1.0, band["selected_test_acc"] + 0.004, "L11",
+    ax.text(band["selected_layer"] + 1.0, band["selected_test_acc"] + 0.007, "L11",
             fontsize=6, color=BLUE, va="bottom", zorder=6,
             path_effects=[pe.withStroke(linewidth=2.0, foreground="white")])
     for spec, c in (("mel", GREEN), ("stft", ORANGE)):
@@ -351,10 +359,12 @@ def fig3():
         if spec == "stft":
             ax.plot(xs2[i], ys2[i], "o", color=c, ms=3.5, zorder=5)
     ax.annotate("−18 pt", xy=(48, 0.491), xytext=(33, 0.435), fontsize=6.5,
-                color=ORANGE, arrowprops=dict(arrowstyle="->", lw=0.6, color=ORANGE))
+                color=ORANGE, bbox=dict(fc="white", ec="none", pad=1.0, alpha=0.8),
+                arrowprops=dict(arrowstyle="->", lw=0.6, color=ORANGE))
     ax.annotate("audio path flat (0.663–0.712)", xy=(44, 0.7095),
-                xytext=(37, 0.722), fontsize=6, color=BLUE, ha="center",
+                xytext=(37, 0.722), fontsize=6.5, color=BLUE, ha="center",
                 va="bottom", zorder=6,
+                bbox=dict(fc="white", ec="none", pad=1.0, alpha=0.8),
                 path_effects=[pe.withStroke(linewidth=2.0, foreground="white")],
                 arrowprops=dict(arrowstyle="-", lw=0.6, color=BLUE))
     ax.set_xlim(0, 48); ax.set_ylim(0.40, 0.80)
