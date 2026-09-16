@@ -306,12 +306,12 @@ def fig2():
             label="Omni", zorder=3)
     for x, v in zip(xs, prof["vl8b"]):
         if v > 0.04:
-            axD.text(x - w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6.5,
-                     fontweight="bold", ha="center", color=BLUE)
+            axD.text(x - w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6,
+                     ha="center", color=BLUE)
     for x, v in zip(xs, prof["omni"]):
         if v > 0.04:
-            axD.text(x + w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6.5,
-                     fontweight="bold", ha="center", color=ORANGE)
+            axD.text(x + w / 2, v + 0.02, "%d" % round(100 * v), fontsize=6,
+                     ha="center", color=ORANGE)
     axD.set_xticks(xs); axD.set_xticklabels(["A", "B", "C", "D"])
     axD.set_ylim(0, 0.74)
     axD.set_yticks([0, 0.25, 0.5])
