@@ -1,0 +1,10 @@
+{
+ "model": "qwen2_audio",
+ "n": 2685,
+ "acc_raw_sum": 0.2212290502793296,
+ "acc_len_normalized": 0.2212290502793296,
+ "pred_distribution": {
+  "0": 2685
+ },
+ "chance": 0.25
+}

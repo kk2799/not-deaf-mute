@@ -1,0 +1,10 @@
+{
+ "model": "qwen3_omni_30b",
+ "n": 800,
+ "acc_raw_sum": 0.25,
+ "acc_len_normalized": 0.25,
+ "pred_distribution": {
+  "0": 800
+ },
+ "chance": 0.25
+}

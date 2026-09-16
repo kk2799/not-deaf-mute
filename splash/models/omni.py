@@ -99,12 +99,31 @@ class Qwen3OmniModel(UATRModel):
         for messages in messages_batch:
             inputs = self._render(messages)
             prompt_len = inputs["input_ids"].shape[1]
-            logits = self.model(**inputs).logits[0]  # [T, V]
-            need = slice(prompt_len - 1, prompt_len - 1 + max_ctoks)
-            lp = torch.log_softmax(logits[need].float(), dim=-1)
             scores = {}
-            for c, tok_ids in choice_token_ids.items():
-                scores[c] = float(sum(lp[i, tid].item() for i, tid in enumerate(tok_ids)))
+            if max_ctoks == 1:
+                # single-token choices: one forward, read the last position
+                logits = self.model(**inputs).logits[0]  # [T, V]
+                lp = torch.log_softmax(logits[prompt_len - 1].float(), dim=-1)
+                for c, tok_ids in choice_token_ids.items():
+                    scores[c] = float(lp[tok_ids[0]].item())
+            else:
+                # multi-token choices: one forward per choice with the choice
+                # tokens appended (teacher forcing); logprobs of those positions
+                for c, tok_ids in choice_token_ids.items():
+                    ids = inputs["input_ids"]
+                    ext = torch.tensor([tok_ids], dtype=ids.dtype, device=ids.device)
+                    fwd = dict(inputs)
+                    fwd["input_ids"] = torch.cat([ids, ext], dim=1)
+                    am = inputs.get("attention_mask")
+                    if am is not None:
+                        fwd["attention_mask"] = torch.cat(
+                            [am, torch.ones((1, len(tok_ids)), dtype=am.dtype,
+                                            device=am.device)], dim=1)
+                    logits = self.model(**fwd).logits[0]
+                    rows = logits[prompt_len - 1: prompt_len - 1 + len(tok_ids)].float()
+                    lp = torch.log_softmax(rows, dim=-1)
+                    scores[c] = float(sum(lp[i, tid].item()
+                                          for i, tid in enumerate(tok_ids)))
             results.append(scores)
         return results
 

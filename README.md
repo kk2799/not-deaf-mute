@@ -20,6 +20,7 @@ decode macro-F1 0.65--0.69.
 | `predictions/generative/` | Per-clip predictions of the 44 generative conditions (JSON: full config, confusion matrix, per-class F1, per-clip `choice_logprobs`) + option-order and null-input diagnostics; `results.csv` = one row per experiment |
 | `predictions/probes_fusion/` | Test-set predictions of the seven single-source probes and the fusion arms (A1--A4, BEATs variants) |
 | `predictions/analyses/` | Aggregated numbers behind the paper: fusion upgrade, honest learning curves, Omni audio-path band, recording-level aggregation, WavLM honest selection, ShipsEar audit, bootstrap CIs |
+| `predictions/ll_scoring/` | Class-name log-likelihood control (letter-free): per-clip scores, raw and length-normalized metrics |
 | `shipsear_letter_layout.csv` | The ShipsEar A--L letter-to-class layout (options are lettered in sorted label-id order) |
 
 Models were read from `/models`, datasets from `/datasets/audio` — neither

@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-"""Class-name log-likelihood scoring — a non-MCQ generative baseline.
+"""Class-name log-likelihood scoring — the missing non-MCQ generative baseline.
 
-Complements the lettered-MCQ protocol: no option list and no letters are
-shown; each class-name string is scored directly as a continuation.
+Reviewer attack this closes: "the standard way to classify with an LLM without
+fine-tuning is log-likelihood scoring of class names; your MCQ-letter collapse
+may be an artifact of the multiple-choice interface."
 
 Protocol (audio pathway, full 2,685-clip DeepShip test split):
   prompt  = free-form instruction, NO option list, NO letters
@@ -51,6 +52,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default="qwen2_audio,qwen3_omni_30b")
     ap.add_argument("--device", default="cuda:0")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="stratified per-class cap on test clips (0 = all)")
     args = ap.parse_args()
 
     RESULTS.mkdir(parents=True, exist_ok=True)
@@ -61,7 +64,12 @@ def main():
 
     manifest = find_manifest({"name": DATASET, "clip_len": CLIP_LEN, "overlap": 0.5})
     aug = pd.read_csv(manifest.with_name(f"{manifest.stem}_spec.csv"))
-    test = aug[aug["split"] == "test"].reset_index(drop=True)
+    test = aug[aug["split"] == "test"]
+    if args.limit:
+        per_class = max(1, args.limit // 4)
+        test = test.groupby("label_id", group_keys=False).apply(
+            lambda g: g.head(per_class))
+    test = test.reset_index(drop=True)
 
     for key in args.models.split(","):
         cfg = MODELS[key]
