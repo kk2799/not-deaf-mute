@@ -2,8 +2,7 @@
 
 **Why Large Audio-Language Models Fail at Underwater Acoustic Target Recognition**
 
-Artifact release for the ICASSP 2027 paper. Four Qwen-lineage multimodal
-LLMs (Qwen2-Audio, Qwen3-VL-8B/32B, Qwen3-Omni) take a 44-condition
+Four Qwen-lineage multimodal LLMs (Qwen2-Audio, Qwen3-VL-8B/32B, Qwen3-Omni) take a 44-condition
 listening/looking/fusion exam on DeepShip and ShipsEar; a diagnostic
 triad (silence / shuffle / prior) localizes the failure to the
 generative readout, while linear probes on the same forward passes
@@ -80,16 +79,3 @@ discordant pairs) is reported alongside and tests exact equality, a
 different null. Script: `scripts/tost_and_shipsear_f1.py`; raw
 inputs: `predictions/probes_fusion/{A1,s1_beats}.json`; summary:
 `predictions/analyses/round2_analyses.json`.
-
-## Citation
-
-```bibtex
-@inproceedings{liu2027notdeafmute,
-  title     = {Not Deaf, but Mute: Why Large Audio-Language Models Fail at
-               Underwater Acoustic Target Recognition},
-  author    = {Liu, Zhengkun and Liang, Yunpeng and Wang, Zixuan and
-               Guo, Yutong and Ren, Jiawei and Xu, Ji},
-  booktitle = {Proc. IEEE Int. Conf. Acoust., Speech, Signal Process. (ICASSP)},
-  year      = {2027}
-}
-```
