@@ -60,22 +60,3 @@ python scripts/run_steering.py                                    # probe-direct
 Every experiment name in `results.csv` is self-describing
 (`<eval>_<model>_<dataset>_<regime>_shot<k>_clip<len>_lang…_enrich…`);
 the JSON with the same name holds its per-clip predictions.
-
-## Statistical procedures
-
-**TOST equivalence test (7-source fusion vs.\ BEATs single layer).**
-Resampling unit: test *recording* (153 recordings; paired clip
-outcomes retained within each recording). Procedure: draw B = 10,000
-bootstrap resamples of the recordings with replacement (NumPy
-`default_rng(0)`, matching `outputs/pilots/round1_analyses/
-a1_a2_bootstrap.py`); per resample compute the accuracy difference
-(fusion minus BEATs) over the resampled clip multiset. Equivalence
-bounds: [−0.02, +0.02] accuracy (±2 percentage points). One-sided
-p-values are the bootstrap tail fractions P(Δ ≥ +0.02) and P(Δ ≤
-−0.02); TOST p = max of the two. Result: 90% percentile CI
-[−1.56, +1.54] pt, TOST p = 0.019 — the CI construction is
-percentile; the clip-level exact McNemar test (p = 1.0, 256:257
-discordant pairs) is reported alongside and tests exact equality, a
-different null. Script: `scripts/tost_and_shipsear_f1.py`; raw
-inputs: `predictions/probes_fusion/{A1,s1_beats}.json`; summary:
-`predictions/analyses/round2_analyses.json`.
